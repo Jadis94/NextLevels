@@ -4,13 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Next Level – Dove il talento incontra l'esperienza</title>
-<meta name="description" content="Next Level è un ponte tra giovani e professionisti: talk, networking, community e mentorship.">
+<meta name="description" content="Next Level è un'associazione che crea una rete di professionisti e ne porta l'esperienza a studenti, laureandi, laureati e neolavoratori: networking, talk e formazione.">
+<meta name="theme-color" content="#0c1f3d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Next Level – Dove il talento incontra l'esperienza">
+<meta property="og:description" content="Una rete di professionisti che fa networking e formazione per studenti, laureandi, laureati e neolavoratori.">
+<meta property="og:image" content="logo.png">
 <link rel="icon" type="image/png" href="logo.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<a class="skip" href="#contenuto">Vai al contenuto</a>
 <div class="progress" id="progress"></div>
+<aside class="rail" aria-hidden="true"><div class="rail-num" id="railNum">LV 01</div><div class="rail-name" id="railName">Start</div><div class="rail-track"><i id="railFill"></i></div></aside>
 <header>
   <div class="container nav">
     <a href="#home" class="logo"><img src="logo.png" alt="" class="logo-img">Next<span>Level</span></a>
@@ -28,78 +35,114 @@
   </div>
 </header>
 
-<main>
+<main id="contenuto">
 <section class="hero" id="home">
-  <div class="container">
-    <span class="eyebrow">Associazione giovanile</span>
-    <h1>Dove il talento incontra <em>l'esperienza.</em></h1>
-    <p>Un ponte tra giovani e professionisti. Costruiamo opportunità attraverso incontri reali, confronto diretto e una community che cresce insieme.</p>
-    <div class="cta">
-      <a href="#contatti" class="btn btn-primary">Entra nella community</a>
-      <a href="#cosa-facciamo" class="btn btn-ghost">Scopri cosa facciamo</a>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Rete di professionisti</span>
+      <h1>Dove il talento incontra <em>l'esperienza.</em></h1>
+      <p class="lead" id="lead">Una rete di professionisti e futuri professionisti. Organizziamo eventi di networking e formazione, dentro e fuori l'università, per studenti, laureandi, laureati e neolavoratori.</p>
+      <div class="persona" role="group" aria-label="Personalizza il sito">
+        <span class="persona-q">Sono…</span>
+        <button type="button" class="chip" data-p="stud" aria-pressed="false">uno studente o neolavoratore</button>
+        <button type="button" class="chip" data-p="pro" aria-pressed="false">un professionista</button>
+        <button type="button" class="chip" data-p="ente" aria-pressed="false">un'università o un'azienda</button>
+      </div>
+      <div class="cta">
+        <a href="#contatti" class="btn btn-primary" id="heroCta"><span id="heroCtaT">Entra nella community</span> <span class="arr" aria-hidden="true">→</span></a>
+        <a href="#cosa-facciamo" class="btn btn-ghost">Scopri cosa facciamo</a>
+      </div>
+      <div class="stats">
+        <div><strong>Rete</strong><span>di professionisti</span></div>
+        <div><strong>Speech</strong><span>e talk di esperti</span></div>
+        <div><strong>Formazione</strong><span>in università e fuori</span></div>
+      </div>
     </div>
-    <div class="stats">
-      <div><strong>Talk</strong><span>con manager e leader</span></div>
-      <div><strong>Network</strong><span>di professionisti</span></div>
-      <div><strong>Mentorship</strong><span>per la tua crescita</span></div>
+    <div class="hero-art" aria-hidden="true">
+      <span class="art-label b">Next Level</span>
+      <svg viewBox="0 0 400 400" fill="none">
+        <defs>
+          <linearGradient id="g" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#dcc193" stop-opacity=".1"/><stop offset="1" stop-color="#dcc193" stop-opacity=".55"/></linearGradient>
+        </defs>
+        <g>
+          <rect class="stair" x="10"  y="310" width="72" height="70"  rx="6" fill="url(#g)"/>
+          <rect class="stair" x="82"  y="248" width="72" height="132" rx="6" fill="url(#g)"/>
+          <rect class="stair" x="154" y="186" width="72" height="194" rx="6" fill="url(#g)"/>
+          <rect class="stair" x="226" y="124" width="72" height="256" rx="6" fill="url(#g)"/>
+          <rect class="stair" x="298" y="62"  width="72" height="318" rx="6" fill="url(#g)"/>
+        </g>
+        <path class="climb" d="M10 380 L370 40" stroke="#fff" stroke-width="5" stroke-linecap="square"/>
+        <g class="peak">
+          <circle class="peak-ring" cx="370" cy="40" r="10" fill="#dcc193"/>
+          <circle cx="370" cy="40" r="10" fill="#dcc193"/>
+        </g>
+      </svg>
+      <span class="art-label a">Livello 01 → 05</span>
     </div>
   </div>
 </section>
+
+<div class="strip" aria-hidden="true">
+  <div class="strip-track">
+    <span>Networking</span><span>Speech</span><span>Formazione</span><span>Community</span><span>Università</span><span>Workshop</span><span>Professionisti</span>
+    <span>Networking</span><span>Speech</span><span>Formazione</span><span>Community</span><span>Università</span><span>Workshop</span><span>Professionisti</span>
+  </div>
+</div>
 
 <section class="about" id="chi-siamo">
   <div class="container about-grid">
     <div class="reveal">
       <span class="eyebrow">Chi siamo</span>
-      <h2>Un ponte tra giovani e professionisti.</h2>
-      <p>Next Level nasce con l'obiettivo di favorire la crescita professionale e personale delle nuove generazioni attraverso l'incontro diretto con chi vive ogni giorno il mondo delle aziende, dell'innovazione e della leadership.</p>
-      <p>Crediamo che l'orientamento non debba limitarsi ai libri o alle lezioni universitarie. Le esperienze reali, le storie professionali e il confronto diretto con manager e professionisti possono aiutare i giovani a fare scelte più consapevoli.</p>
-      <p><strong>Costruiamo una community fondata sulla condivisione di competenze, esperienze e opportunità.</strong></p>
+      <h2>Una rete di <em>professionisti</em> che condivide esperienza.</h2>
+      <p>Next Level nasce con due scopi: creare una rete di professionisti e, attraverso quella rete, portare esperienza e competenze a chi sta costruendo il proprio percorso.</p>
+      <p>I nostri soci sono in gran parte professionisti o futuri professionisti. Sono loro a tenere speech, talk e momenti di formazione rivolti a studenti, laureandi, laureati e neolavoratori, dentro e fuori l'università.</p>
+      <p><strong>Una rete che cresce insieme e restituisce valore a chi arriva dopo.</strong></p>
     </div>
     <div class="bridge reveal" aria-hidden="true">
-      <div class="side"><span class="dot"></span><div><strong>Giovani</strong><small>Studenti e neolaureati</small></div></div>
+      <div class="side"><span class="dot"></span><div><strong>Professionisti</strong><small>Soci e futuri professionisti</small></div></div>
       <div class="line"></div>
-      <div class="side"><span class="dot w"></span><div><strong>Next Level</strong><small>Incontri, confronto, opportunità</small></div></div>
+      <div class="side"><span class="dot w"></span><div><strong>Next Level</strong><small>Networking, speech, formazione</small></div></div>
       <div class="line"></div>
-      <div class="side"><span class="dot"></span><div><strong>Professionisti</strong><small>Manager e leader aziendali</small></div></div>
+      <div class="side"><span class="dot"></span><div><strong>Chi sta iniziando</strong><small>Studenti, laureandi, laureati, neolavoratori</small></div></div>
     </div>
   </div>
 </section>
 
 <section id="cosa-facciamo">
   <div class="container">
-    <div class="reveal" style="max-width:640px">
+    <div class="reveal sec-head">
       <span class="eyebrow">Cosa facciamo</span>
-      <h2>Le connessioni che aprono opportunità.</h2>
+      <h2>Le connessioni che aprono <em>opportunità.</em></h2>
     </div>
-    <div class="cards">
+    <div class="cards bento">
       <article class="card reveal">
         <div class="icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Talk &amp; Networking</h3>
-        <p>Incontri con manager, professionisti e leader aziendali per conoscere percorsi di carriera, sfide e opportunità del mercato del lavoro.</p>
+        <h3>Networking</h3>
+        <p>Occasioni per conoscersi, scambiare contatti e far nascere collaborazioni tra tutte le persone che partecipano ai nostri eventi.</p>
       </article>
       <article class="card reveal">
         <div class="icon"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-        <h3>Career Talks</h3>
-        <p>Eventi nelle università e nelle scuole per rispondere a domande concrete sul mondo del lavoro.</p>
+        <h3>Formazione nelle università</h3>
+        <p>Speech, talk e workshop tenuti da professionisti dentro gli atenei, per portare il mondo del lavoro in aula.</p>
       </article>
       <article class="card reveal">
         <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M12 11.5 6 17M12 11.5l6 5.5"/></svg></div>
-        <h3>Community Professionale</h3>
-        <p>Una rete di professionisti e manager che condividono competenze, esperienze e relazioni a supporto delle nuove generazioni.</p>
+        <h3>La rete di professionisti</h3>
+        <p>Una community di professionisti e futuri professionisti che condividono competenze, esperienze e relazioni.</p>
       </article>
       <article class="card reveal">
         <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .8-5.3 4.9 1.6 7.3L12 18.2 5.7 22l1.6-7.3L2 9.8 9 9z"/></svg></div>
-        <h3>Formazione e Mentorship</h3>
-        <p>Workshop, testimonianze e momenti di confronto per sviluppare competenze professionali, soft skill e leadership.</p>
+        <h3>Formazione anche fuori dall'università</h3>
+        <p>Speech, workshop e incontri aperti a laureandi, laureati e neolavoratori, in aziende e spazi esterni, per sviluppare competenze professionali e soft skill.</p>
       </article>
     </div>
 
     <div class="questions reveal">
       <h3>Domande concrete, risposte da chi lo vive ogni giorno.</h3>
       <ul>
-        <li>Cosa significa lavorare in una multinazionale?</li>
-        <li>Come si diventa project manager?</li>
-        <li>Quali competenze servono nel digitale?</li>
+        <li>Cosa significa lavorare in una grande realtà?</li>
+        <li>Come si diventa un leader?</li>
+        <li>Quali competenze servono davvero?</li>
         <li>Come si costruisce una carriera nella consulenza, nel finance o nell'IT?</li>
       </ul>
     </div>
@@ -108,37 +151,37 @@
 
 <section class="forwho" id="per-chi">
   <div class="container">
-    <div class="reveal" style="max-width:640px">
+    <div class="reveal sec-head">
       <span class="eyebrow">Cosa facciamo per te</span>
-      <h2>Una community, tre modi di farne parte.</h2>
+      <h2>Una community, <em>tre modi</em> di farne parte.</h2>
     </div>
-    <div class="tabs reveal" role="tablist">
-      <button role="tab" class="tab on" data-tab="giovani" aria-selected="true">Per i giovani</button>
-      <button role="tab" class="tab" data-tab="pro" aria-selected="false">Per i professionisti</button>
-      <button role="tab" class="tab" data-tab="enti" aria-selected="false">Per università e aziende</button>
+    <div class="tabs reveal" role="tablist" aria-label="Chi sei?">
+      <button role="tab" class="tab on" id="t-giovani" aria-controls="tab-giovani" data-tab="giovani" aria-selected="true">Studenti e neolavoratori</button>
+      <button role="tab" class="tab" tabindex="-1" id="t-pro" aria-controls="tab-pro" data-tab="pro" aria-selected="false">Per i professionisti</button>
+      <button role="tab" class="tab" tabindex="-1" id="t-enti" aria-controls="tab-enti" data-tab="enti" aria-selected="false">Per università e aziende</button>
     </div>
     <div class="panels">
-      <div class="panel on" id="tab-giovani">
+      <div class="panel on" id="tab-giovani" role="tabpanel" aria-labelledby="t-giovani" tabindex="0">
         <ul>
-          <li>Incontri diretti con manager e professionisti</li>
+          <li>Speech e talk di professionisti del tuo settore</li>
           <li>Orientamento basato su esperienze reali</li>
-          <li>Workshop su soft skill e leadership</li>
-          <li>Mentorship e accesso a una rete di contatti</li>
+          <li>Workshop e formazione, in università e fuori</li>
+          <li>Networking e contatti utili per entrare nel mondo del lavoro</li>
         </ul>
-        <a href="#contatti" class="btn btn-wine">Entra come giovane</a>
+        <a href="#contatti" class="btn btn-wine">Partecipa agli eventi</a>
       </div>
-      <div class="panel" id="tab-pro">
+      <div class="panel" id="tab-pro" role="tabpanel" aria-labelledby="t-pro" tabindex="0">
         <ul>
-          <li>Condividi il tuo percorso con le nuove generazioni</li>
-          <li>Diventa mentor e ispira i leader di domani</li>
-          <li>Entra in una rete di manager e professionisti</li>
-          <li>Partecipa a talk ed eventi di networking</li>
+          <li>Entra in una rete di professionisti e futuri professionisti</li>
+          <li>Fai networking con persone di settori e aziende diverse</li>
+          <li>Proponi o tieni speech e talk per studenti e neolavoratori</li>
+          <li>Partecipa a eventi di networking e formazione</li>
         </ul>
-        <a href="#contatti" class="btn btn-wine">Diventa mentor</a>
+        <a href="#contatti" class="btn btn-wine">Entra nella rete</a>
       </div>
-      <div class="panel" id="tab-enti">
+      <div class="panel" id="tab-enti" role="tabpanel" aria-labelledby="t-enti" tabindex="0">
         <ul>
-          <li>Career Talk nelle aule e negli atenei</li>
+          <li>Talk e speech di professionisti in aula e negli atenei</li>
           <li>Incontri tra studenti e realtà aziendali</li>
           <li>Eventi di orientamento su misura</li>
           <li>Collaborazioni e progetti condivisi</li>
@@ -149,16 +192,16 @@
   </div>
 </section>
 
-<section class="steps-sec">
+<section class="steps-sec" id="come-funziona">
   <div class="container">
-    <div class="reveal" style="max-width:640px">
+    <div class="reveal sec-head">
       <span class="eyebrow">Come funziona</span>
-      <h2>Dal primo incontro alla tua carriera.</h2>
+      <h2>Dal primo incontro alla tua <em>carriera.</em></h2>
     </div>
     <ol class="steps">
       <li class="reveal"><b>01</b><h3>Incontra</h3><p>Partecipa ai talk e conosci chi lavora davvero nelle aziende.</p></li>
       <li class="reveal"><b>02</b><h3>Confrontati</h3><p>Fai domande, ascolta storie, chiarisci i tuoi dubbi sul futuro.</p></li>
-      <li class="reveal"><b>03</b><h3>Cresci</h3><p>Sviluppa competenze con workshop e mentorship dedicati.</p></li>
+      <li class="reveal"><b>03</b><h3>Cresci</h3><p>Sviluppa competenze con workshop e momenti di formazione dedicati.</p></li>
       <li class="reveal"><b>04</b><h3>Connettiti</h3><p>Entra nella rete e trasforma i contatti in opportunità.</p></li>
     </ol>
   </div>
@@ -173,11 +216,12 @@
 
 <section id="eventi">
   <div class="container">
-    <div class="reveal" style="max-width:640px">
+    <div class="reveal sec-head">
       <span class="eyebrow">News &amp; Eventi</span>
-      <h2>I prossimi appuntamenti.</h2>
+      <h2>I prossimi <em>appuntamenti.</em></h2>
     </div>
     <div class="cards" id="events"></div>
+    <div class="events-note reveal"><span>Le date saranno annunciate a breve.</span><a href="#contatti">Scrivici per ricevere gli aggiornamenti →</a></div>
   </div>
 </section>
 
@@ -188,18 +232,19 @@
       <h2>Domande frequenti.</h2>
     </div>
     <div class="faq reveal">
-      <details><summary>Chi può partecipare?</summary><p>Studenti, neolaureati e giovani professionisti, ma anche manager e professionisti che vogliono condividere la propria esperienza.</p></details>
+      <details><summary>Chi può partecipare?</summary><p>Gli eventi sono aperti a studenti, laureandi, laureati e neolavoratori. L'associazione è composta in gran parte da professionisti e futuri professionisti.</p></details>
       <details><summary>Gli eventi sono a pagamento?</summary><p>Le modalità di partecipazione saranno indicate per ogni evento.</p></details>
-      <details><summary>Come posso diventare mentor?</summary><p>Scrivici tramite il modulo contatti indicando il tuo ruolo e i temi che vorresti portare.</p></details>
-      <details><summary>Potete venire nella nostra università o scuola?</summary><p>Sì, organizziamo Career Talks dedicati. Contattaci per costruire insieme l'incontro.</p></details>
+      <details><summary>Come entro nella rete di professionisti?</summary><p>Scrivici tramite il modulo contatti indicando il tuo ruolo e il tuo settore: ti spiegheremo come entrare e come partecipare o proporre un talk.</p></details>
+      <details><summary>Potete venire nella nostra università o scuola?</summary><p>Sì, organizziamo talk e momenti di formazione negli atenei, ma anche fuori. Contattaci per costruire insieme l'incontro.</p></details>
     </div>
   </div>
 </section>
 
 <section class="join-band">
+  <span class="ghost" aria-hidden="true">LEVEL UP</span>
   <div class="container reveal">
-    <h2>Pronto a fare il prossimo passo?</h2>
-    <a href="#contatti" class="btn btn-primary">Unisciti a Next Level</a>
+    <h2>Pronto a fare il <em>prossimo livello?</em></h2>
+    <a href="#contatti" class="btn btn-primary">Unisciti a Next Level <span class="arr" aria-hidden="true">→</span></a>
   </div>
 </section>
 
@@ -207,22 +252,27 @@
   <div class="container contact-grid">
     <div class="reveal">
       <span class="eyebrow">Contatti</span>
-      <h2>Porta il tuo talento al livello successivo.</h2>
-      <p>Sei uno studente, un giovane professionista o un manager che vuole condividere la propria esperienza? Scrivici e diventa parte di Next Level.</p>
+      <h2>Porta il tuo talento al <em>livello successivo.</em></h2>
+      <p>Sei uno studente, un laureando, un professionista o un ente che vuole collaborare? Scrivici e diventa parte di Next Level.</p>
     </div>
     <form id="form" class="reveal">
-      <div><label for="nome">Nome e cognome</label><input id="nome" required></div>
-      <div><label for="email">Email</label><input id="email" type="email" required></div>
+      <div><label for="nome">Nome e cognome</label><input id="nome" required autocomplete="name" placeholder="Come ti chiami?"></div>
+      <div><label for="email">Email</label><input id="email" type="email" required autocomplete="email" placeholder="nome@esempio.it"></div>
       <div><label for="ruolo">Chi sei?</label>
         <select id="ruolo">
-          <option>Studente / Giovane</option>
-          <option>Professionista / Manager</option>
+          <option>Studente / Laureando / Laureato</option>
+          <option>Neolavoratore</option>
+          <option>Professionista</option>
           <option>Università / Scuola / Azienda</option>
         </select></div>
-      <div><label for="testo">Messaggio</label><textarea id="testo" required></textarea></div>
+      <div><label for="testo">Messaggio</label><textarea id="testo" required placeholder="Raccontaci chi sei e come vorresti partecipare."></textarea></div>
       <label class="check"><input type="checkbox" required> Ho letto l'<a href="#privacy" data-privacy>informativa sulla privacy</a> e acconsento al trattamento dei miei dati per essere ricontattato.</label>
       <button class="btn btn-wine" type="submit">Invia messaggio</button>
-      <p class="msg" id="msg">Grazie! Si aprirà il tuo client di posta per completare l'invio.</p>
+      <div class="msg" id="msg" role="status">
+        <strong>Grazie, ci siamo quasi.</strong>
+        <p>Si aprirà il tuo programma di posta con il messaggio già pronto: ti basta premere "Invia". Se non si apre, scrivici a <a href="mailto:desilvestrisluca@gmail.com">desilvestrisluca@gmail.com</a>.</p>
+        <button type="button" class="copy" id="copyMail">Copia indirizzo email</button>
+      </div>
     </form>
   </div>
 </section>
@@ -259,6 +309,8 @@
     <p><small>Ultimo aggiornamento: novembre 2026.</small></p>
   </div>
 </dialog>
+
+<button class="totop" id="totop" aria-label="Torna su"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
 <script src="script.js"></script>
 </body>
