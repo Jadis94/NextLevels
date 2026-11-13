@@ -21,7 +21,7 @@ document.getElementById('form').addEventListener('submit',e=>{
   e.preventDefault();
   const v=id=>document.getElementById(id).value;
   const body=`Nome: ${v('nome')}\nEmail: ${v('email')}\nProfilo: ${v('ruolo')}\n\n${v('testo')}`;
-  location.href=`mailto:${EMAIL}?subject=${encodeURIComponent('Contatto da sito Next Leaders')}&body=${encodeURIComponent(body)}`;
+  location.href=`mailto:${EMAIL}?subject=${encodeURIComponent('Contatto da sito Next Level')}&body=${encodeURIComponent(body)}`;
   document.getElementById('msg').style.display='block';
 });
 document.getElementById('year').textContent=new Date().getFullYear();
